@@ -8,8 +8,8 @@ const CACHE_NAME = 'v1_cache_Pizzas',
         'https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.woff2',
         './style.css',
         './script.js',
-        './img/Gamelogo.png',
-        './img/Gamelogo.png'
+        './img/logo.png',
+        './img/logo.png'
     ]
 
 //durante la fase de instalación, generalmente se almacena en caché los activos estáticos

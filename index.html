@@ -5,40 +5,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Practica web </title>
+    <title>Farmacias Salud</title>
     <meta name="description" content="Bienvenid@s">
-
-    <meta name="theme-color" content="#FFFFFF">
     <meta name="MobileOptimized" content="width">
     <meta name="HandheldFriendly" content="true">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="shortcut icon" type="image/png" href="./img/Gamelogo.png">
-    <link rel="apple-touch-icon" href="./Gamelogo.png">
-    <link rel="apple-touch-startup-image" href="./Gamelogo.png">
+    <link rel="shortcut icon" type="image/png" href="./img/logo.png">
+    <link rel="apple-touch-icon" href="./logo.png">
+    <link rel="apple-touch-startup-image" href="./logo.png">
     <link rel="manifest" href="./manifest.json">
-
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
 
 <body>
-    <header class="Header">
-        <h1>Nintendo</h1>
-        <img src="./img/Gamelogo.png" alt="adf">
-        <p>
-            Bienvenid@s a todos Los Fans de The Leguen Of Zelda.
-        </p>
-        <nav>
-            <a href="https://www.youtube.com/watch?v=z3-IqrdDW3M" target="_blank" title="YouTube">
-                <i class="fab fa-youtube"></i>
-            </a>
 
-        </nav>
-    </header>
-    <iframe width="853" height="480" src="https://www.youtube.com/embed/3fr1Z07AV00" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <script src="./script.js"></script>
-</body>
+    <body>
+        <!-- HEADER -->
+        <section id="header">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-8">
+                        <img class="logo" src="img/logo.png" />
+                        <br>
+                        <h1 class="white-text">Bienvenidos a Farmacias Salud</h1>
+                        <h4 class="white-text">Donde te proporcionamos el medicamento y tratamiento que necesitas</h4>
+                        <div id="countdown" class="white-text"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- HEADER ENDS -->
+
+        <!-- ABOUT -->
+        <section id="about">
+            <div class="container">
+                <div class="row text-center">
+                    <!-- Section 1 -->
+                    <div data-sr="enter top over 1s, wait 0.3s, move 24px, reset" class="col-md-4">
+                        <img src="img/cupon.png" />
+                        <h3>Descuentos</h3>
+                        <div class="colored-line-small-center"></div>
+                        <p>Disfruta de nuestras enorme cantidad de descuento que tenemos en muchos fármacos.</p>
+                    </div>
+                    <!-- Section 2 -->
+                    <div data-sr="enter bottom over 1s, wait 0.3s, move 24px, reset" class="col-md-4 middle">
+                        <img src="img/repartidor.png" />
+                        <h3>Servicio a domicilio</h3>
+                        <div class="colored-line-small-center"></div>
+                        <p>Contamos con nuestro propio equipo de repartidores a tu disposición. </p>
+                    </div>
+                    <!-- Section 3 -->
+                    <div data-sr="enter top over 1s, wait 0.3s, move 24px, reset" class="col-md-4">
+                        <img src="img/grupo.png" />
+                        <h3>Atención</h3>
+                        <div class="colored-line-small-center"></div>
+                        <p>Nuestra atención siempre estará al servicio de nuestros clientes las 24 horas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ABOUT ENDS -->
+
+        <!-- SUBSCRIBE -->
+        <section id="subscribe">
+            <div class="container">
+                <img src="img/email.png" />
+                <div class="row text-center">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h4 data-sr="enter" class="black-text">Proporciona tu correo electrónico para que recibas nuestras ofertas.</h4>
+                        <!-- MAILCHIMP FORM -->
+                        <form id="mc_form" role="form">
+                            <input data-sr="enter top over 1s, wait 0.3s, move 24px, reset" type="email" class="form-control" id="mc-email" name="mc-email" placeholder="Tu Email" />
+                            <button data-sr="enter bottom over 1s, wait 0.5s, move 10px, reset" type="submit" class="button-leweb">Enviar</button>
+                            <label for="mc-email" class="mc-email"></label>
+                        </form>
+                        <!-- MAILCHIMP FORM ENDS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SUBSCRIBE ENDS -->
+
+        <!-- CONTACT US -->
+        <!-- <section id="contact">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-8 col-md-offset-2">
+                        
+                        <form method="post" action="">
+                            <p data-sr="enter top over 1s, wait 0.3s, move 24px, reset"
+                                class="contact-info text-center">Get in Contact. Fill up the form below. All fields are
+                                required.</p>
+                            <div data-sr="enter left over 1s, wait 0.3s, move 24px, reset" class="form-group col-md-6">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" />
+                            </div>
+                            <div data-sr="enter right over 1s, wait 0.3s, move 24px, reset" class="form-group col-md-6">
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="Your Email" />
+                            </div>
+                            <div data-sr="enter bottom over 1s, wait 0.3s, move 24px, reset"
+                                class="form-group col-md-12">
+                                <input type="text" class="form-control" id="phone" name="phone"
+                                    placeholder="Phone Number" />
+                            </div>
+                            <div data-sr="enter bottom over 1s, wait 0.3s, move 24px, reset"
+                                class="form-group col-md-12">
+                                <textarea cols="60" rows="3" id="comment" name="comment" class="form-control"
+                                    placeholder="Write your comment here..."></textarea>
+                            </div>
+                            <div data-sr="enter bottom over 1s, wait 0.3s, move 24px, reset"
+                                class="form-group col-sm-12 ">
+                                <button type="submit" class="button-leweb">Send Message</button>
+                            </div>
+                        </form>
+
+                        
+                        <div id="success" class="col-md-12 col-sm-12 text-center">
+                            <i class="fa fa-check-circle"></i>
+                            <strong>Message successfully sent</strong>
+                            <p>Thanks for contacting us. We will respond to you as soon as possible!</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- CONTACT ENDS -->
+
+        <!-- FOOTER -->
+        <footer id="footer">
+            <div class="container">
+                <div class="row text-center">
+                    <p>Farmacias Salud DESIGN BY Eneas <img src="img/icon_64.png" /></p>
+                </div>
+            </div>
+        </footer>
+        <script src="./script.js"></script>
+    </body>
 
 </html>
